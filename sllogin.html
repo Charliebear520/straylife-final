@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>STRAY LIFE</title>
+    <link rel="canonical" href="https://letswrite.tw/firebase-auth/" />
+    <meta property="og:url" content="https://letswritetw.github.io/letswrite-firebase-auth/" />
+    <meta property="fb:app_id" content="911000986339138" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Let's Write" />
+    <meta property="og:title" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <meta itemprop="name" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <meta name="description" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <meta property="og:description" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <meta itemprop="description" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <meta itemprop="image" content="https://letswritetw.github.io/letswrite-firebase-auth/fb.jpg" />
+    <meta property="og:image" content="https://letswritetw.github.io/letswrite-firebase-auth/fb.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="STRAY LIFE - 慈善 寵物 - 領養" />
+    <link rel="shortcut icon" href="img\LOGO黑色版.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/style.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="img\LOGONAME去被.png" style="height:36px;width:100%" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="ourstory.html" style="color:#B0B0B0;">Our Story<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html" style="color:#B0B0B0;">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sllogin.html" style="color:rgb(241,179,86);">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" style="color:#B0B0B0;">Shop</a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Donate</button>
+    </nav>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- 是 登入 || 註冊-->
+    <input id="type" type="hidden" value="signin" />
+    <div class="container">
+        <!-- 未登入-->
+        <section class="user-null none">
+            <!-- 登入 || 註冊 表單-->
+            <div class="form-card">
+                <div class="cat mb-4"><img src="dist/cat_input.svg" /><a href="index.html" target="_blank">Stray Life首頁 »</a></div>
+                <div class="tab-title mb-4"><a class="active" href="#" data-value="signin">登入</a><a href="#" data-value="create">註冊</a></div>
+                <div class="input-group mb-4">
+                    <input class="u-full-width" id="email" type="email" placeholder="輸入帳號" />
+                </div>
+                <div class="input-group mb-4">
+                    <input class="u-full-width" id="password" type="password" placeholder="輸入密碼" />
+                </div>
+                <div class="input-group mb-4">
+                    <button class="button button-primary" id="sign-up" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+  <defs/>
+  <style>
+    .st0{fill:#00a7e5}
+  </style>
+  <path d="M24.9 18.3l-.8 2.3-.8 2.9s-2 1.1-2.1.3.8-.9.8-.9l.4-1.5-2.3-4c0-.1 4.8.9 4.8.9zm-12.7-.9l-1.4 6.1s-1.1.6-1.8.3c-.8-.3.5-1.1.5-1.1s-.4-3.7-2.7-4.2c-2.2-.4 5.4-1.1 5.4-1.1z" class="st0"/>
+  <path d="M3.4 10.2s2.9 1.1 5.6.5c0 0 5.2-.8 5.6-.9s5.5-.5 8.2 0c0 0 7.4-5.8 3.2-8.4 0 0-1.8.9-2.3.3 0-.2.1-.5.3-.7.5-.6 1.1-1 1.8-1 1.7 0 4.4.5 3.2 5.6-.4 1.4-1.1 2.7-2 3.8-.7.8-1.4 2-1.1 2.9.6 1.7.8 4.2.8 4.2l2.1 3.1s1.2 3.8 1.2 4-1.7.5-2 .2c-.3-.3.5-.9.5-.9s-.6-1.2-1.7-1.5c-1.1-.3-3.8-1.4-4.4-1.8-.5-.5-10-3.1-12.6-.6-1.5 1.4-3.1 2.8-4.7 4 0 0-.8 1.1-1.7 1.1s-1.1-1.4 0-1.5S6 18.8 6 18.8s.5-2.7-1.8-3.1c-1.3-.3-2-.3-2.4-.2-.4.1-.7-.1-.9-.3l-.8-.8c-.1-.2-.1-.4-.1-.6.2-.5.4-1.1.5-1.7.2-.8 1.4-1.4 1.4-1.4s.3-2.1.8-1.5c.2.5.5.7.7 1z" class="st0"/>
+</svg>
+
+            </button>
+                </div>
+                <div class="text-center"><a class="text-muted" id="forgot" href="">忘記密碼</a></div>
+            </div>
+        </section>
+        <!-- 已登入-->
+        <section class="user-logged none">
+            <div class="text-center mb-4">
+                <p id="user-email"></p>
+                <p id="user-uid"></p>
+                <p id="user-name"></p>
+                <p id="user-email-verify"></p>
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="editor" type="button">更新顯示名稱</button>
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="changePassword" type="button">修改密碼</button>
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="verify-email" type="button">驗證信箱</button>
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="logout" type="button">登出</button>
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="delete-user" type="button">刪除帳號</button>
+            </div>
+        </section>
+        <!-- 更新資料-->
+        <section class="user-editor none">
+            <div class="input-group mb-4">
+                <input class="u-full-width" id="new-name" type="text" placeholder="輸入顯示名稱" />
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="sure-name" type="button">確認更新</button>
+            </div>
+        </section>
+        <!-- 修改密碼-->
+        <section class="user-password none">
+            <div class="input-group mb-4">
+                <input class="u-full-width" id="old-password-change" type="password" placeholder="輸入舊密碼" />
+            </div>
+            <div class="input-group mb-4">
+                <input class="u-full-width" id="new-password" type="password" placeholder="輸入新密碼" />
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="sure-password" type="button">確認更新</button>
+            </div>
+        </section>
+        <!-- 刪除帳號-->
+        <section class="user-delete none">
+            <div class="input-group mb-4">
+                <input class="u-full-width" id="old-password-delete" type="password" placeholder="輸入密碼" />
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="sure-delete" type="button">確認刪除</button>
+            </div>
+        </section>
+        <!-- 忘記密碼-->
+        <section class="user-forgot none">
+            <div class="input-group mb-4">
+                <input class="u-full-width" id="new-forgot" type="text" placeholder="輸入您的帳號" />
+            </div>
+            <div class="input-group mb-4">
+                <button class="button button-primary" id="sure-forgot" type="button">寄出修改密碼信</button>
+            </div>
+        </section>
+        <!-- 錯誤訊息-->
+        <div class="error" id="error-message"></div>
+    </div>
+    <footer>
+        <div class="footer " id="section4 ">
+
+            <div class="row col-12 " style="padding-top:6%">
+                <div class="row col-md-8 ">
+                    <div class="col-md-3 text-center ">
+                        <div class="fl ">Site Map </div>
+                        <div class="col-12 ">
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Home</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Projects</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Ambassadors</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Newsroom</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Terms of Use</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center ">
+                        <div class="fl ">Information</div>
+                        <div class="col-12 ">
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Donate with Crypto</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Donate with Visa/MC</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">NFT for Good</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Our Story</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html "></a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="fl">Follow Us</div>
+                        <div class="col-12 ">
+                            <div class="row-md-2 ">
+                                <a class="fm-2 ">Instagram</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.instagram.com/kai_jun_huang/">charliebear</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.instagram.com/xuanron_/">xuanron</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm-2 ">Facebook</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.facebook.com/profile.php?id=100002148278823">charliebear</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.facebook.com/profile.php?id=100009246313723">xuanron</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center ">
+                        <div class="fl ">Contact Us</div>
+                        <div class="col-12 ">
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">Donate with Crypto</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">bcf@straylife.charity</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">NFT for Good</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html ">media@straylife.charity</a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html "></a>
+                            </div>
+                            <div class="row-md-2 ">
+                                <a class="fm " href="index.html "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-md-4 ">
+                    <div class=" fc col-md-12 text-center " style=" color: #474d57; ">
+                        <div class="fr ">
+                            <img src="img\LOGONAME去被.png " alt="cat " style="width:100%; ">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row col-md-12 ">
+                    <div class="fr text-center ">
+                        Copyright © 2018-2021 Blockchain Charity Foundation USA. All rights reserved.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCeeabhAGKdC7Oi_qfspSLeKoOIPVeSxBg",
+            authDomain: "sl-login-66f5a.firebaseapp.com",
+            projectId: "sl-login-66f5a",
+            storageBucket: "sl-login-66f5a.appspot.com",
+            messagingSenderId: "911638476555",
+            appId: "1:911638476555:web:c79cf56399210860f6540e",
+            measurementId: "G-0H4WCBN2CH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script> -->
+    <script src="js\vendor\bootstrap.min.js "></script>
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/vendor/gsap.min.js"></script>
+    <script src="./js/vendor/ScrollTrigger.min.js"></script>
+    <script src="./dist/fire.js"></script>
+    <script src="./dist/main.min.js"></script>
+</body>
+
+</html>

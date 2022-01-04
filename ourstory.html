@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRAY LIFE</title>
+    <link rel="icon" href="img\LOGO黑色版.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\ostyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top ">
+        <a class="navbar-brand" href="index.html"><img src="img\LOGONAME去被.png" style="height:36px;width:100%" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="ourstory.html" style="color:rgb(241,179,86);">Our Story<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html" style="color:#B0B0B0;">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sllogin.html" style="color:#B0B0B0;">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" style="color:#B0B0B0;">Shop</a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Donate</button>
+    </nav>
+
+
+    <!-- 回到TOP的BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="story" id="section1">
+        <div class="container ">
+            <div class="row col-12 " style="margin-top: 10%;">
+                <!--<div class="row col-md-6 " style="padding-top: 49px;
+                padding-left: 47px;
+                padding-right: 113px;">-->
+                <div class="o_square">
+                    <div class="row gy-2">
+                        <div class="content_square col col-lg-6 col-md-8 col-12" style="top:0;">
+                            <div class="o_title">ABOUT US</div>
+                            <div class="o_content">Our aim is to create last-mile solutions for impactful social</div>
+                            <div class="o_content">projects and scaling them up quickly to fundamentally change</div>
+                            <div class="o_content">millions of lives. People with non-smart phones can now own</div>
+                            <div class="o_content">crypto wallets to receive and transfer crypto currencies that</div>
+                            <div class="o_content">serve as alternative assets to protect their property value.</div>
+                        </div>
+                        <div class="o_pic col col-lg-6 col-md-4 col-12 clearfix">
+                            <img src="img\aboutus.svg" width="100%" height="100%">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="o_line"></div>
+
+
+                <div class="o_square">
+                    <div class="row gy-2">
+                        <div class="o_pic col col-lg-6 col-md-4 col-12 clearfix">
+                            <img src="img\our mission.svg " width="100%" height="100%">
+                        </div>
+                        <div class="content_square col col-lg-6 col-md-8 col-12 clearfix">
+                            <div class="o_title">Our Mission</div>
+                            <div class="o_content">With our partners and donors, we aim to not only create thoughtful</div>
+                            <div class="o_content">solutions and long-term change for some of the world's most</div>
+                            <div class="o_content">complex problems, but also a brand new experience for donating.</div>
+                            <div class="o_content">We also want to give everyone the ability to see how their</div>
+                            <div class="o_content">contributions via blockchain technology are making visible changes</div>
+                            <div class="o_content">in the world.</div>
+                            <div class="o_content">We envision a world where blockchain technology can be used for</div>
+                            <div class="o_content">philanthropy as a social contract to end all forms of poverty and</div>
+                            <div class="o_content">inequality, and advance sustainable development to ensure no one</div>
+                            <div class="o_content">is left behind.</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="o_square">
+                    <div class="row gy-2">
+                        <div class="content_square col col-lg-6 col-md-8 col-12 clearfix">
+                            <div class="o_title">2021 Initiative</div>
+                            <div class="o_content">Binance Charity wants to spearhead new innovative solutions </div>
+                            <div class="o_content">towards impactful social projects and efficiently scaling them up to </div>
+                            <div class="o_content">fundamentally change millions of lives. We want to give people</div>
+                            <div class="o_content">without smartphones the ability to receive and transfer crypto</div>
+                            <div class="o_content">currencies as an alternative form of safeguarding their assets. We</div>
+                            <div class="o_content">are also looking at empowering more NGOs and volunteers by giving</div>
+                            <div class="o_content">them an efficient and engaging volunteer management solution with</div>
+                            <div class="o_content">Binance's blockchain infrastructure.</div>
+
+                        </div>
+                        <div class="o_pic col col-lg-6 col-md-4 col-12 clearfix">
+                            <img src="img/our approach.svg" width="100%" height="365px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="o_square">
+                    <div class="row  gy-2">
+                        <div class="o_pic col col-lg-6 col-md-4 col-12 clearfix">
+                            <img src="img\aboutus.svg" width="100%" height="365px">
+                        </div>
+                        <div class="content_square col col-lg-6 col-md-8 col-12 clearfix">
+                            <div class="o_title">Our Approach</div>
+                            <div class="litle_content_box">
+                                <div class="o_content"><b>Transparent Donation System</b></div>
+                                <div class="o_content">We create a blockchain-based donation system that makes each</div>
+                                <div class="o_content">transaction flow transparent, accountable, and efficient.</div>
+                            </div>
+                            <div class="litle_content_box">
+                                <div class="o_content"><b>Developing & Testing Innovative Solutions</b></div>
+                                <div class="o_content">We work onsite to understand local needs and develop solutions for</div>
+                                <div class="o_content">specific social problems. We continually test and improve on our</div>
+                                <div class="o_content">solutions to scale up the social impact.</div>
+                            </div>
+                            <div class="litle_content_box">
+                                <div class="o_content"><b>International Advocacy</b></div>
+                                <div class="o_content">We facilitate in-depth cross-sectional dialogues at international</div>
+                                <div class="o_content">events to enhance global awareness of the social power of</div>
+                                <div class="o_content">blockchain, encourage applications at greater scale, and make</div>
+                                <div class="o_content">blockchain accessible to the youth and more vulnerable</div>
+                                <div class="o_content">communities.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="o_line"></div>
+            <!--<h3 class="text-center " style="box-sizing: border-box;
+                    margin: 0px 0px 10px;
+                    min-width: 0px;font-family: BinancePlex,Arial,sans-serif!important;
+                    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;font-weight: 500;
+    text-transform: uppercase;">ABOUT US</h3>
+                    <div style="font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 32px;letter-spacing: normal;    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    min-width: 0px;color: rgb(71, 77, 87);    font-family: BinancePlex,Arial,sans-serif!important;">
+                        Our aim is to create last-mile solutions for impactful social projects and scaling them up quickly to fundamentally change millions of lives. People with non-smart phones can now own crypto wallets to receive and transfer crypto currencies that serve
+                        as alternative assets to protect their property value.
+                    </div>
+                </div>
+                <div class="row col-md-6 ">
+                    <img src="img\aboutus.svg ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="story" id="section1">
+        <div class="container ">
+            <div class="row col-12 ">
+                <div class="row col-md-6 ">
+                    <img src="img\our mission.svg ">
+                </div>
+                <div class="row col-md-6" style="    padding-top: 29px;
+                padding-left: 47px;
+                padding-right: 113px;">
+                    <h3 class="text-center " style="box-sizing: border-box;
+                    margin: 0px 0px 10px;
+                    min-width: 0px;font-family: BinancePlex,Arial,sans-serif!important;
+                    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;font-weight: 500;
+    text-transform: uppercase;">Our Mission</h3>
+                    <div style="font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 32px;letter-spacing: normal;    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    min-width: 0px;color: rgb(71, 77, 87);    font-family: BinancePlex,Arial,sans-serif!important;">
+                        With our partners and donors, we aim to not only create thoughtful solutions and long-term change for some of the world's most complex problems, but also a brand new experience for donating. We also want to give everyone the ability to see how their contributions
+                        via blockchain technology are making visible changes in the world. We envision a world where blockchain technology can be used for philanthropy as a social contract to end all forms of poverty and inequality, and advance sustainable
+                        development to ensure no one is left behind.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="story" id="section1">
+        <div class="container ">
+            <div class="row col-12 ">
+                <div class="row col-md-6 " style="    padding-top: 29px;
+                padding-left: 47px;
+                padding-right: 113px;">
+                    <h3 class="text-center " style="box-sizing: border-box;
+                    margin: 0px 0px 10px;
+                    min-width: 0px;font-family: BinancePlex,Arial,sans-serif!important;
+                    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;font-weight: 500;
+    text-transform: uppercase;">2021 Initiative</h3>
+                    <div style="font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 32px;letter-spacing: normal;    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    min-width: 0px;color: rgb(71, 77, 87);    font-family: BinancePlex,Arial,sans-serif!important;">
+                        Binance Charity wants to spearhead new innovative solutions towards impactful social projects and efficiently scaling them up to fundamentally change millions of lives. We want to give people without smartphones the ability to receive and transfer crypto
+                        currencies as an alternative form of safeguarding their assets. We are also looking at empowering more NGOs and volunteers by giving them an efficient and engaging volunteer management solution with Binance's blockchain infrastructure.
+                    </div>
+                </div>
+                <div class="row col-md-6 ">
+                    <img src="img\2021initiative.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="story" id="section1">
+        <div class="container ">
+            <div class="row col-12 ">
+                <div class="row col-md-6 ">
+                    <img src="img\our approach.svg">
+                </div>
+                <div class="row col-md-6 " style="    padding-top: 29px;
+                padding-left: 47px;
+                padding-right: 113px;">
+                    <h3 class="text-center " style="box-sizing: border-box;
+                    margin: 0px 0px 10px;
+                    min-width: 0px;font-family: BinancePlex,Arial,sans-serif!important;
+                    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;font-weight: 500;
+    text-transform: uppercase;">Our Approach</h3>
+                    <div style="font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 32px;letter-spacing: normal;    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    min-width: 0px;color: rgb(71, 77, 87);    font-family: BinancePlex,Arial,sans-serif!important;">
+                        Transparent Donation System We create a blockchain-based donation system that makes each transaction flow transparent, accountable, and efficient. Developing & Testing Innovative Solutions We work onsite to understand local needs and develop solutions
+                        for specific social problems. We continually test and improve on our solutions to scale up the social impact. International Advocacy We facilitate in-depth cross-sectional dialogues at international events to enhance global awareness
+                        of the social power of blockchain, encourage applications at greater scale, and make blockchain accessible to the youth and more vulnerable communities.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="story" id="section1">
+        <div class="container ">
+            <div class="row col-12 " style="margin:10% 0 ">
+                <div class="row col-md-6 " style="    padding-top: 29px;
+                padding-left: 47px;
+                padding-right: 113px;">
+                    <h3 class="text-center " style="box-sizing: border-box;
+                    margin: 0px 0px 10px;
+                    min-width: 0px;font-family: BinancePlex,Arial,sans-serif!important;
+                    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 24px;font-weight: 500;
+    text-transform: uppercase;">Our Progress</h3>
+                    <div style="font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 32px;letter-spacing: normal;    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    min-width: 0px;color: rgb(71, 77, 87);    font-family: BinancePlex,Arial,sans-serif!important;">
+                        We know the natural world is in crisis. Trees are critical in the battle against climate change and an essential part in keeping balance to our fragile ecosystems that provide life on earth. As a step towards a greener future for all, we've launched the
+                        Tree Millions Alliance.
+                    </div>
+                </div>
+                <div class="row col-md-6 ">
+                    <img src="img\aboutus.svg ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partner" id="section3">
+        <div class="container ">
+            <div class="row">
+                <div class="row col-12">
+                    <p class="title text-center" style="color:black;
+                        font-family: BinancePlex,Arial,sans-serif!important;">Our Goals</p>
+                    <div class="text1 text-center">
+                        Improve the transparency of philanthropy donation.
+                    </div>
+                    <div class="text1 text-center">
+                        Expand the use case for cryptocurrencies.
+                    </div>
+                    <div class="text3 text-center">
+                        Accelerate global sustainable development.
+                    </div>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.un.org/development/desa/disabilities/envision2030-goal2.html">
+                        <img src="img\zero hunger.svg" alt="zero hunger">
+                        <div class="g">Zero Hunger</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\better health.svg" alt="better health">
+                        <div class="g">Better Health</div>
+                    </a>
+
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\clean water.svg" alt="clean water">
+                        <div class="g">Clean Water</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\decent work.svg" alt="zero hunger">
+                        <div class="g">Innovation</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\reduced.svg" alt="zero hunger">
+                        <div class="g">Equalities</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\sustained.svg" alt="zero hunger">
+                        <div class="g">Better Place</div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\responad.svg" alt="zero hunger">
+                        <div class="g">Responsible</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\climate.svg" alt="zero hunger">
+                        <div class="g">Climate Action</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\waterlive.svg" alt="zero hunger">
+                        <div class="g">Life Below Water</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\land live.svg" alt="zero hunger">
+                        <div class="g">Life On Land</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank " style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\peace.svg" alt="zero hunger">
+                        <div class="g">Peace</div>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <a class="name" target="_blank" style="text-decoration:none;" href="https://www.facebook.com/SpringDayPetShopCafe/">
+                        <img src="img\partnership.svg" alt="zero hunger">
+                        <div class="g">Partner</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer " id="section4 ">
+            <div class="container ">
+                <div class="row col-12 ">
+                    <div class="row col-md-8 ">
+                        <div class="col-md-3 text-center ">
+                            <div class="fl ">Site Map </div>
+                            <div class="col-12 ">
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Home</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Projects</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Ambassadors</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Newsroom</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Terms of Use</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center ">
+                            <div class="fl ">Information</div>
+                            <div class="col-12 ">
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Donate with Crypto</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Donate with Visa/MC</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">NFT for Good</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Our Story</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html "></a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html "></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="fl">Follow Us</div>
+                            <div class="col-12 ">
+                                <div class="row-md-2 ">
+                                    <a class="fm-2 ">Instagram</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.instagram.com/kai_jun_huang/">charliebear</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.instagram.com/xuanron_/">xuanron</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm-2 ">Facebook</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.facebook.com/profile.php?id=100002148278823">charliebear</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " target="_blank " style="text-decoration:none;" href="https://www.facebook.com/profile.php?id=100009246313723">xuanron</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center ">
+                            <div class="fl ">Contact Us</div>
+                            <div class="col-12 ">
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">Donate with Crypto</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">bcf@straylife.charity</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">NFT for Good</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html ">media@straylife.charity</a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html "></a>
+                                </div>
+                                <div class="row-md-2 ">
+                                    <a class="fm " href="index.html "></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-4 ">
+                        <div class=" fc col-md-12 text-center " style=" color: #474d57; ">
+                            <div class="fr ">
+                                <img src="img\LOGONAME去被.png " alt="cat " style="width:100%; ">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row col-md-12 ">
+                        <div class="fr text-center ">
+                            Copyright © 2018-2021 Blockchain Charity Foundation USA. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="js\vendor\jquery.js "></script>
+    <script src="js\vendor\bootstrap.min.js "></script>
+    <script src="js\vendor\gsap.min.js "></script>
+    <script src="js\vendor\ScrollTrigger.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
